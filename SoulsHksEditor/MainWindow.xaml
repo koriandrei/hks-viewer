@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoulsHksEditor"
+        xmlns:Views="clr-namespace:NodeNetwork.Views;assembly=NodeNetwork" x:Class="SoulsHksEditor.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+      <Menu DockPanel.Dock="Top" Height="50" VerticalAlignment="Top" >
+        <MenuItem Header="State Machine">
+                <Button Click="Button_Click">Previous</Button>
+                <Button Click="Button_Click_1">Next</Button>
+            </MenuItem>
+            <Label x:Name="label"/>
+        </Menu>
+      <Views:NetworkView x:Name="HksView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,-1,0,0"/>
+    </DockPanel>
+</Window>
